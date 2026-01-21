@@ -1,0 +1,235 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fonte-titulo;
+    src: url(https://eaevinniix.github.io/Selo-Bem-Receber/fontes/ArchivoBlack-Regular.ttf);
+}
+
+@font-face {
+    font-family: fonte-texto;
+    src: url(https://eaevinniix.github.io/Selo-Bem-Receber/fontes/Raleway-VariableFont_wght.ttf);
+}
+
+
+body {
+    font-family: fonte-texto, Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 150px;
+    background-color: #ffffff;
+}
+
+header {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    background-color: #368DC6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #FDBB15;
+    align-items: center;
+    font-size: 20px;
+    font-family: fonte-titulo;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.imagem-logo {
+    width: 90px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #FDBB15;
+    text-decoration: none;
+    padding: 4px 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: #71C9F1;
+}
+
+/* ------------------------------
+   BLOCO PADRÃO (index + empresas)
+------------------------------ */
+
+.fraseEfeito {
+    font-size: 20px;
+    color: #FDBB15;
+    font-family: fonte-titulo;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.paragrafo {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 24px;
+    border-radius: 14px;
+    background-color: #368DC6;
+    color: white;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+    transition: transform .28s ease, box-shadow .28s ease;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.paragrafo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 44px rgba(0,0,0,0.16);
+}
+
+
+.paragrafo h2 {
+    font-size: 28px;
+    color: #FDBB15;
+    font-family: fonte-titulo;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.paragrafo p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 90%;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.paragrafo h3 {
+    font-size: 90px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.paragrafo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.paragrafo ul li {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+
+.paragrafo img {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+
+#lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#lista img {
+    max-width: 220px;
+}
+
+#DivulgacaoSelo {
+    align-items: center;
+    justify-content: center;
+}
+
+#DivulgacaoSelo ul li a {
+    color: #FDBB15;
+    text-decoration: none;
+    font-family: fonte-titulo;
+    transition: background-color 0.5s;
+}
+
+#DivulgacaoSelo ul li a:hover {
+    background-color: #71C9F1;
+}
+
+
+.tituloempresas {
+    font-size: 42px;
+    text-align: center;
+    color: #FDBB15;
+    font-family: fonte-titulo;
+    margin-top: 20px;
+}
+
+.texto-empresas {
+    padding: 10px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+.rodape {
+    background-color: #368DC6;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+@media (max-width: 600px) {
+    .paragrafo {
+        padding: 18px;
+    }
+
+    .paragrafo h2 {
+        font-size: 24px;
+    }
+
+    .paragrafo p {
+        font-size: 16px;
+    }
+
+    nav ul {
+        gap: 6px;
+    }
+
+    #lista {
+        flex-direction: column;
+    }
+
+    #lista img {
+        max-width: 180px;
+    }
+}
+
+.link ul li a{
+    color: #FDBB15;
+    text-decoration: none;
+    font-family: fonte-titulo;
+    transition: background-color 0.5s;
+     align-items: center;
+    justify-content: center;
+}
